@@ -23,7 +23,30 @@ class ClientTest < Minitest::Test
     assert_equal 'Inputs can only be positive numbers', exception.message
   end
 
+  def test_sum_return_error_when_passed_negative_integers
+    exception = assert_raises RuntimeError do
+      Sum.new.sum(-5, 4)
+    end
+    assert_equal 'Inputs can only be positive numbers', exception.message
+  end
+
+  def test_sum_return_error_when_passed_negative_integers
+    exception = assert_raises RuntimeError do
+      Sum.new.sum(0, 4)
+    end
+    assert_equal 'Inputs can only be positive numbers', exception.message
+  end
+
+  def test_sum_return_error_when_passed_negative_integers
+    exception = assert_raises RuntimeError do
+      Sum.new.sum(0, 0)
+    end
+    assert_equal 'Inputs can only be positive numbers', exception.message
+  end
+
+
 end
+
 
 
 
