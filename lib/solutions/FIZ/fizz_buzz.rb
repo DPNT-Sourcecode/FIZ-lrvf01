@@ -2,11 +2,11 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    if number % 15 == 0
+    if divisible_by(number, 15)
       "fizz buzz"
-    elsif number % 3 == 0
+    elsif divisible_by(number, 3)
       "fizz"
-    elsif number % 5 == 0
+    elsif divisible_by(number, 5)
       "buzz"
     elsif number.to_s.split("").include?("3")
       "fizz"
@@ -23,3 +23,4 @@ class FizzBuzz
   end
 
 end
+
