@@ -2,7 +2,7 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    if divisible_by(number, 15)
+    if divisible_by(number, 15) || (has_number(number, 3) && has_number(number, 3)) 
       "fizz buzz"
     elsif divisible_by(number, 3)
       "fizz"
@@ -10,7 +10,7 @@ class FizzBuzz
       "buzz"
     elsif has_number(number, 3)
       "fizz"
-    elsif number.to_s.split("").include?("5")
+    elsif has_number(number, 5)
       "buzz"
     else
       "#{number}"
@@ -28,5 +28,6 @@ class FizzBuzz
   end
 
 end
+
 
 
