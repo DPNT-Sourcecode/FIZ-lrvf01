@@ -6,27 +6,27 @@ Logging.logger.root.appenders = Logging.appenders.stdout
 require_solution 'FIZ'
 
 class ClientTest < Minitest::Test
-  def test_fizz_is_returned_when_given_3
-    assert_equal "fizz", FizzBuzz.new.fizz_buzz(3)
+  def test_fizz_fake_deluxe_is_returned_when_given_3
+    assert_equal "fizz fake deluxe", FizzBuzz.new.fizz_buzz(3)
   end
 
   def test_fizz_is_returned_when_given_9
     assert_equal "fizz", FizzBuzz.new.fizz_buzz(9)
   end
 
-  def test_buzz_is_returned_when_given_5
-    assert_equal "buzz", FizzBuzz.new.fizz_buzz(5)
+  def test_buzz_fake_deluxe_is_returned_when_given_5
+    assert_equal "buzz fake deluxe", FizzBuzz.new.fizz_buzz(5)
   end
 
   def test_buzz_is_returned_when_given_10
     assert_equal "buzz", FizzBuzz.new.fizz_buzz(10)
   end
 
-  def test_fizz_buzz_is_returned_when_given_15
+  def test_fizz_buzz_fake_deluxe_is_returned_when_given_15
     assert_equal "fizz buzz fake deluxe", FizzBuzz.new.fizz_buzz(15)
   end
 
-  def test_fizz_buzz_is_returned_when_given_45
+  def test_fizz_buzz__fake_deluxe_is_returned_when_given_45
     assert_equal "fizz buzz fake deluxe", FizzBuzz.new.fizz_buzz(45)
   end
 
@@ -114,5 +114,6 @@ class ClientTest < Minitest::Test
     assert_equal "fizz deluxe", FizzBuzz.new.fizz_buzz(132)
   end
 end
+
 
 
