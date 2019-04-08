@@ -17,9 +17,12 @@ class ClientTest < Minitest::Test
   end
 
   def test_sum_return_error_when_passed_negative_integers
-    assert_raises (Error) { Sum.new.sum(-5, -4) }
+    assert_raises ClientTest::Error do
+      Sum.new.sum(-5, -4)
+    end
     # proc {  }.must_raise RuntimeError
     # assert_equal "Inputs can only be positive numbers", exception.message
   end
 
 end
+
