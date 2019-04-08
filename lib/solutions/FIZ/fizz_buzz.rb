@@ -10,12 +10,15 @@ class FizzBuzz
       "buzz"
     elsif number.to_s.split("").include?("3")
       "fizz"
+    elsif number.to_s.split("").include?("5")
+      "buzz"
     else
       "#{number}"
     end
   end
 
 end
+
 
 
 
