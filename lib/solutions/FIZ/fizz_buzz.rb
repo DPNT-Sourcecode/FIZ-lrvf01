@@ -3,10 +3,7 @@ class FizzBuzz
 
   def fizz_buzz(number)
     response = []
-    # if divisible_by(number, 15) || (has_number(number, 3) && has_number(number, 5))
-    #   "fizz buzz"
-    # elsif (divisible_by(number, 3) || has_number(number, 3)) && (divisible_by(number, 5) || has_number(number, 5))
-    #   "fizz buzz"
+    
     if divisible_by(number, 3) || has_number(number, 3)
       response << "fizz"
     end
@@ -16,9 +13,12 @@ class FizzBuzz
     if is_deluxe?(number)
       response << "deluxe"
     end
-    else
-      "#{number}"
+    if response.length == 0
+      response << "#{number}"
     end
+
+    return response.join(" ")
+
   end
 
   def divisible_by(number, divisor)
@@ -37,6 +37,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
