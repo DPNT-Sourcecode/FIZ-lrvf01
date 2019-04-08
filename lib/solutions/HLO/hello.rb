@@ -2,13 +2,7 @@
 class Hello
 
   def hello(friend_name)
-    p "Hello, #{friend_name.capitalise}"
+    "Hello, #{friend_name}!"
   end
 
 end
-
-
-
-
-
-
