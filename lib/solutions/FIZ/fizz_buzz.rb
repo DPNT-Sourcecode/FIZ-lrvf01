@@ -17,8 +17,9 @@ class FizzBuzz
     end
   end
 
+  def divisible_by(number, divisor)
+    return true if number % divisor == 0
+    false
+  end
+
 end
-
-
-
-
