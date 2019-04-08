@@ -35,7 +35,7 @@ class FizzBuzz
   end
 
   def is_deluxe?(number)
-    return true if number > 10 && divisible_by(number, 2) && (number.to_s.split("").uniq.length == 1)
+    return true if number > 10 && divisible_by(number, 2) && ((divisible_by(number, 5) && has_number(number, 5)) || (divisible_by(number, 3) && has_number(number, 3)))
     false
   end
 
@@ -45,3 +45,4 @@ class FizzBuzz
   end
 
 end
+
