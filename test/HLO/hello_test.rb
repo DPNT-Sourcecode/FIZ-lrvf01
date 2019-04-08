@@ -7,8 +7,9 @@ require_solution 'HLO'
 
 class ClientTest < Minitest::Test
 
-  def return_message
-    assert_equal 'Hello Ignore!!!!!!', Hello.new.hello('Ignore')
-  end
+  # def return_message
+  #   assert_equal 'Hello Ignore!!!!!!', Hello.new.hello('Ignore')
+  # end
 
 end
+
