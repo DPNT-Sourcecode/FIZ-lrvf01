@@ -8,7 +8,7 @@ class FizzBuzz
       "fizz"
     elsif number % 5 == 0
       "buzz"
-    elsif number.to_s.split("").include("3")
+    elsif number.to_s.split("").include?("3")
       "fizz"
     else
       "#{number}"
@@ -16,5 +16,6 @@ class FizzBuzz
   end
 
 end
+
 
 
