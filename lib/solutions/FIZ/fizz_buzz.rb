@@ -5,6 +5,7 @@ class FizzBuzz
     if divisible_by(number, 15) || (has_number(number, 3) && has_number(number, 5))
       "fizz buzz"
     elsif divisible_by(number, 3) && (divisible_by(number, 5) || has_number(number, 5))
+      "fizz buzz"
     elsif divisible_by(number, 3) || has_number(number, 3)
       "fizz"
     elsif divisible_by(number, 5) || has_number(number, 5)
@@ -25,3 +26,4 @@ class FizzBuzz
   end
 
 end
+
