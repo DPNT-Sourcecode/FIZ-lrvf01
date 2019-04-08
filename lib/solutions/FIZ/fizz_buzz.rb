@@ -10,6 +10,8 @@ class FizzBuzz
       "fizz"
     elsif divisible_by(number, 5) || has_number(number, 5)
       "buzz"
+    elsif number_deluxe(number)
+      "deluxe"
     else
       "#{number}"
     end
@@ -26,6 +28,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
