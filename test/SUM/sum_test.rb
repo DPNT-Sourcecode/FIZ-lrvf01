@@ -16,6 +16,15 @@ class ClientTest < Minitest::Test
     assert_equal 9, Sum.new.sum(4,5), 'It returns 9 when passed 4 and 5'
   end
 
+
+  def test_sum_of_0_and_4
+    assert_equal 4, Sum.new.sum(0,4), 'It returns 4 when passed 0 and 4'
+  end
+
+  def test_sum_of_0_and_0
+    assert_equal 0, Sum.new.sum(0,0), 'It returns 0 when passed 0 and 0'
+  end
+
   def test_sum_return_error_when_passed_negative_integers
     exception = assert_raises RuntimeError do
       Sum.new.sum(-5, -4)
@@ -29,20 +38,9 @@ class ClientTest < Minitest::Test
     end
     assert_equal 'Inputs can only be positive numbers', exception.message
   end
-
-  def test_sum_return_error_when_passed_zero_and_positive_integer
-    assert_equal 4, Sum.new.sum(0,4), 'It returns 4 when passed 0 and 4'
-  end
-
-  def test_sum_return_error_when_passed_two_zeros
-    exception = assert_raises RuntimeError do
-      Sum.new.sum(0, 0)
-    end
-    assert_equal 'Inputs can only be positive numbers', exception.message
-  end
-
-
+  
 end
+
 
 
 
