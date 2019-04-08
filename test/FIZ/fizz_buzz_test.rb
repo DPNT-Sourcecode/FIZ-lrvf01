@@ -71,15 +71,15 @@ class ClientTest < Minitest::Test
   end
 
   def test_fizz_buzz_is_returned_when_given_135
-    assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(135)
+    assert_equal "fizz buzz fake deluxe", FizzBuzz.new.fizz_buzz(135)
   end
 
-  def test_fake_deluxe_is_returned_when_given_11
-    assert_equal "fake deluxe", FizzBuzz.new.fizz_buzz(11)
+  def test_11_is_returned_when_given_11
+    assert_equal "11", FizzBuzz.new.fizz_buzz(11)
   end
 
-  def test_deluxe_is_returned_when_given_22
-    assert_equal "deluxe", FizzBuzz.new.fizz_buzz(22)
+  def test_22_returned_when_given_22
+    assert_equal "22", FizzBuzz.new.fizz_buzz(22)
   end
 
   def test_fizz_fake_deluxe_is_returned_when_given_33
@@ -97,6 +97,9 @@ class ClientTest < Minitest::Test
   def test_fizz_fake_deluxe_is_returned_when_given_555
     assert_equal "fizz fake deluxe", FizzBuzz.new.fizz_buzz(333)
   end
+
+
 end
+
 
 
