@@ -90,6 +90,3 @@ class ClientTest < Minitest::Test
     assert_equal "fizz buzz deluxe", FizzBuzz.new.fizz_buzz(555)
   end
 end
-
-
-
