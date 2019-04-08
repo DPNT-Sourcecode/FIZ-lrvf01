@@ -2,8 +2,9 @@
 class Hello
 
   def hello(friend_name)
-    "Hello Ignore"
+    "Hello #{friend_name}"
   end
 
 end
+
 
