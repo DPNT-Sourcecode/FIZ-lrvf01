@@ -101,9 +101,12 @@ class ClientTest < Minitest::Test
   def test_fizz_buzz_deluxe_is_returned_when_given_300
     assert_equal "fizz buzz deluxe", FizzBuzz.new.fizz_buzz(300)
   end
+
+  def test_buzz_deluxe_is_returned_when_given_50
+    assert_equal "buzz deluxe", FizzBuzz.new.fizz_buzz(50)
+  end
+
+  def test_fizz_buzz_deluxe_is_returned_when_given_4350
+    assert_equal "fizz buzz deluxe", FizzBuzz.new.fizz_buzz(4350)
+  end
 end
-
-
-
-
-
