@@ -3,7 +3,7 @@ class FizzBuzz
 
   def fizz_buzz(number)
     response = []
-    
+
     if divisible_by(number, 3) || has_number(number, 3)
       response << "fizz"
     end
@@ -12,6 +12,9 @@ class FizzBuzz
     end
     if is_deluxe?(number)
       response << "deluxe"
+    end
+    if is_fake_deluxe?(number)
+      response << "fake deluxe"
     end
     if response.length == 0
       response << "#{number}"
@@ -32,8 +35,14 @@ class FizzBuzz
   end
 
   def is_deluxe?(number)
-    return true if number > 10 && (number.to_s.split("").uniq.length == 1)
+    return true if number > 10 && divisible_by(number, 2) && (number.to_s.split("").uniq.length == 1)
+    false
+  end
+
+  def is_fake_deluxe?(number)
+    return true if number > 10 && !divisible_by(number, 2) && (number.to_s.split("").uniq.length == 1)
     false
   end
 
 end
+
