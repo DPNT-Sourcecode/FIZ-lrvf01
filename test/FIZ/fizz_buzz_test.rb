@@ -61,5 +61,10 @@ class ClientTest < Minitest::Test
   def test_478_is_returned_when_given_478
     assert_equal "478", FizzBuzz.new.fizz_buzz(478)
   end
+
+  def test_546_is_returned_when_given_546
+    assert_equal "478", FizzBuzz.new.fizz_buzz(478)
+  end
 end
+
 
