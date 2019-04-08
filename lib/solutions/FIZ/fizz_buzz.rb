@@ -8,7 +8,7 @@ class FizzBuzz
       "fizz"
     elsif divisible_by(number, 5)
       "buzz"
-    elsif number.to_s.split("").include?("3")
+    elsif has_number(number, 3)
       "fizz"
     elsif number.to_s.split("").include?("5")
       "buzz"
@@ -22,5 +22,11 @@ class FizzBuzz
     false
   end
 
+  def has_number(number, contained_number)
+    return true if number.to_s.split("").include?(contained_number.to_s)
+    false
+  end
+
 end
+
 
