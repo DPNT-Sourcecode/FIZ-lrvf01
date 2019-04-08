@@ -74,8 +74,17 @@ class ClientTest < Minitest::Test
     assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(135)
   end
 
+  def test_fizz_deluxe_is_returned_when_given_33
+    assert_equal "fizz deluxe", FizzBuzz.new.fizz_buzz(555)
+  end
+
+  def test_buzz_deluxe_is_returned_when_given_55
+    assert_equal "fizz deluxe", FizzBuzz.new.fizz_buzz(555)
+  end
+
   def test_fizz_buzz_deluxe_is_returned_when_given_555
     assert_equal "fizz buzz deluxe", FizzBuzz.new.fizz_buzz(555)
   end
 end
+
 
