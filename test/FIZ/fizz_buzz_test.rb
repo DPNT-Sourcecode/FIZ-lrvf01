@@ -7,7 +7,7 @@ require_solution 'FIZ'
 
 class ClientTest < Minitest::Test
   def test_fizz_is_returned_when_given_3
-    assert_equal "fizz", FizzBuzz.new.fizz_buzz(3)
+    assert_equal "fizz fake deluxe", FizzBuzz.new.fizz_buzz(3)
   end
 
   def test_fizz_is_returned_when_given_9
@@ -15,7 +15,7 @@ class ClientTest < Minitest::Test
   end
 
   def test_buzz_is_returned_when_given_5
-    assert_equal "buzz", FizzBuzz.new.fizz_buzz(5)
+    assert_equal "buzz fake deluxe", FizzBuzz.new.fizz_buzz(5)
   end
 
   def test_buzz_is_returned_when_given_10
@@ -23,11 +23,11 @@ class ClientTest < Minitest::Test
   end
 
   def test_fizz_buzz_is_returned_when_given_15
-    assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(15)
+    assert_equal "fizz buzz fake deluxe", FizzBuzz.new.fizz_buzz(15)
   end
 
   def test_fizz_buzz_is_returned_when_given_45
-    assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(45)
+    assert_equal "fizz buzz fake deluxe", FizzBuzz.new.fizz_buzz(45)
   end
 
   def test_1_is_returned_when_given_1
@@ -98,8 +98,8 @@ class ClientTest < Minitest::Test
     assert_equal "fizz fake deluxe", FizzBuzz.new.fizz_buzz(333)
   end
 
-
 end
+
 
 
 
