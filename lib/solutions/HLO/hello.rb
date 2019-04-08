@@ -2,10 +2,11 @@
 class Hello
 
   def hello(friend_name)
-    "Hello, World!"
+    p "Hello, #{friend_name.capitalise}"
   end
 
 end
+
 
 
 
