@@ -28,8 +28,9 @@ class FizzBuzz
   end
 
   def is_deluxe?(number)
-    if number > 10
-      
+    if number > 10 && (number.to_s.split("").uniq.length == 1)
+
   end
 
 end
+
