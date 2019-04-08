@@ -16,5 +16,10 @@ class ClientTest < Minitest::Test
     assert_equal 9, Sum.new.sum(4,5), 'It returns 9 when passed 4 and 5'
   end
 
+  def test_sum_return_error_when_passed_negative_integers
+    
+  end
+
 end
+
 
